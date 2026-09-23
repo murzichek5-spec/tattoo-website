@@ -79,7 +79,7 @@ header {
   inset: -10px;
   z-index: 0;
 
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.04);
   border-radius: 62% 38% 57% 43% / 44% 58% 42% 56%;
   filter: blur(24px);
 }
@@ -92,24 +92,27 @@ header {
   pointer-events: none;
 
   background:
-    radial-gradient(circle at 25% 30%, rgba(255,255,255,0.12), transparent 40%),
-    radial-gradient(circle at 75% 65%, rgba(255,255,255,0.08), transparent 35%);
+    radial-gradient(circle at 25% 30%, rgba(255,255,255,0.08), transparent 40%),
+    radial-gradient(circle at 75% 65%, rgba(255,255,255,0.05), transparent 35%);
+
   filter: blur(20px);
 }
 
 .hero-art img {
   position: relative;
   z-index: 1;
+
   width: 100%;
   height: 100%;
   display: block;
-  object-fit: cover;
 
-  filter: invert(1) grayscale(1) contrast(1.08);
+  object-fit: cover;
 
   transform: scale(1.08);
 
   border-radius: 58% 42% 55% 45% / 38% 56% 44% 62%;
+
+  filter: none;
 }
 
 .label {
